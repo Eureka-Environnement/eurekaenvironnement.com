@@ -1,10 +1,10 @@
 import React from 'react';
-import ImageSection from './ImageSection';
+import AccueilSection from './AccueilSection';
 
 const HomePage = () => {
   return (
     <>
-      <ImageSection />
+      <AccueilSection />
       <div className="main">
         Sections
       </div>

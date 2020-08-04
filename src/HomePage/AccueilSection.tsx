@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 
-const ImageSection = () => {
+const AccueilSection = () => {
   return (
     <div className="page-header">
       <div className="filter" />
@@ -15,4 +15,4 @@ const ImageSection = () => {
   );
 };
 
-export default ImageSection;
+export default AccueilSection;
