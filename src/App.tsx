@@ -9,16 +9,22 @@ function App() {
 
   const aProposRef = useRef<null | HTMLDivElement>(null);
   const nosClientsRef = useRef<null | HTMLDivElement>(null);
+  const nosServicesRef = useRef<null | HTMLDivElement>(null);
+  const nousJoindreRef = useRef<null | HTMLDivElement>(null);
 
   return (
     <div>
       <Header
         aProposRef={aProposRef}
         nosClientsRef={nosClientsRef}
+        nosServicesRef={nosServicesRef}
+        nousJoindreRef={nousJoindreRef}
       />
       <HomePage
         aProposRef={aProposRef}
         nosClientsRef={nosClientsRef}
+        nosServicesRef={nosServicesRef}
+        nousJoindreRef={nousJoindreRef}
       />
     </div>
   );
