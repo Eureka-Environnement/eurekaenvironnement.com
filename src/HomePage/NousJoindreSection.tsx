@@ -13,7 +13,7 @@ const NousJoindreSection = ({
   nousJoindreRef
 }: NousJoindreSection) => {
   return (
-    <div className="section text-center" ref={nousJoindreRef}>
+    <div className="section text-center section-full-viewport" ref={nousJoindreRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">

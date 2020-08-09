@@ -13,7 +13,7 @@ const NosServicesSection = ({
   nosServicesRef
 }: NosServicesSection) => {
   return (
-    <div className="section text-center" ref={nosServicesRef}>
+    <div className="section text-center section-full-viewport" ref={nosServicesRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">
