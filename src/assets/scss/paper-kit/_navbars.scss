@@ -55,7 +55,6 @@
 
   .navbar-nav {
     .nav-item .nav-link {
-      cursor: pointer;
       line-height: 1.6;
       margin: $navbar-margin-a;
       padding: $navbar-padding-a;
@@ -74,7 +73,10 @@
         padding: 15px 0;
       }
     }
-
+    .nav-item .nav-link:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
     .nav-item .nav-link.btn {
       margin: $navbar-margin-a-btn;
       padding: 9px;
