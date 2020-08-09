@@ -7,17 +7,19 @@ import NousJoindreSection from './NousJoindreSection';
 
 interface HomePage {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
+  nosClientsRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
 const HomePage = ({
-  aProposRef
+  aProposRef,
+  nosClientsRef
 }: HomePage) => {
   return (
     <>
       <AccueilSection />
       <div className="main">
         <AProposSection aProposRef={aProposRef} />
-        <NosClientsSection />
+        <NosClientsSection nosClientsRef={nosClientsRef} />
         <NosServicesSection />
         <NousJoindreSection />
       </div>

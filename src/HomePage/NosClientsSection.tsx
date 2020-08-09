@@ -1,9 +1,13 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
 
-const NosClientsSection = () => {
+interface NosClientsSection {
+  nosClientsRef: React.MutableRefObject<HTMLDivElement | null>;
+}
+
+const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
   return (
-    <div className="section text-center">
+    <div className="section text-center section-full-viewport" ref={nosClientsRef}>
       <Container>
         <Row>
           <div className="ml-auto mr-auto col-md-8">

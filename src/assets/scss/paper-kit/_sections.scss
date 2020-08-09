@@ -135,3 +135,14 @@
         z-index: 2;
     }
 }
+.section-full-viewport{
+    min-height: 100vh;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
