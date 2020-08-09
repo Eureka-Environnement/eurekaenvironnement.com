@@ -18,7 +18,7 @@
 
     &:focus{
        background-color: $white-bg;
-       border: 1px solid $table-line-color;
+       border: 1px solid $dark-gray;
        @include box-shadow(none);
        outline: 0 !important;
 

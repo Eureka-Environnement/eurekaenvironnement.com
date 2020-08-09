@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
+import { ToastContainer } from 'react-toastify';
 import Header from 'components/Header';
 import HomePage from 'HomePage/index';
 // styles
 import 'assets/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 import 'assets/scss/paper-kit.scss';
 
 function App() {
@@ -12,18 +14,21 @@ function App() {
   const nousJoindreRef = useRef<null | HTMLDivElement>(null);
 
   return (
-    <div>
-      <Header
-        aProposRef={aProposRef}
-        nosServicesRef={nosServicesRef}
-        nousJoindreRef={nousJoindreRef}
-      />
-      <HomePage
-        aProposRef={aProposRef}
-        nosServicesRef={nosServicesRef}
-        nousJoindreRef={nousJoindreRef}
-      />
-    </div>
+    <>
+      <div>
+        <Header
+          aProposRef={aProposRef}
+          nosServicesRef={nosServicesRef}
+          nousJoindreRef={nousJoindreRef}
+        />
+        <HomePage
+          aProposRef={aProposRef}
+          nosServicesRef={nosServicesRef}
+          nousJoindreRef={nousJoindreRef}
+        />
+      </div>
+      <ToastContainer />
+    </>
   );
 }
 
