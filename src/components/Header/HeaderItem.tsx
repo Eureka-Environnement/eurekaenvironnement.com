@@ -7,11 +7,13 @@ import {
 interface HeaderItem {
   title: string;
   toggleNavbar: VoidFunction;
+  sectionRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
 const HeaderItem = ({
   title,
-  toggleNavbar
+  toggleNavbar,
+  sectionRef
 }: HeaderItem) => {
   return (
     <NavItem>
@@ -19,7 +21,7 @@ const HeaderItem = ({
         onClick={() => {
           window.innerWidth < 992 && toggleNavbar();
           window.scroll({
-            top: 0,
+            top: sectionRef.current ? sectionRef?.current?.offsetTop : 0,
             behavior: 'smooth'
           });
         }}

@@ -5,12 +5,18 @@ import NosClientsSection from './NosClientsSection';
 import NosServicesSection from './NosServicesSection';
 import NousJoindreSection from './NousJoindreSection';
 
-const HomePage = () => {
+interface HomePage {
+  aProposRef: React.MutableRefObject<HTMLDivElement | null>;
+}
+
+const HomePage = ({
+  aProposRef
+}: HomePage) => {
   return (
     <>
       <AccueilSection />
       <div className="main">
-        <AProposSection />
+        <AProposSection aProposRef={aProposRef} />
         <NosClientsSection />
         <NosServicesSection />
         <NousJoindreSection />
