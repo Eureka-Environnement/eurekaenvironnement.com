@@ -7,7 +7,7 @@ const AccueilSection = () => {
       <div className="filter" />
       <Container>
         <div className="motto text-center">
-          <h1>Test</h1>
+          <h1>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h1>
           <br />
         </div>
       </Container>
