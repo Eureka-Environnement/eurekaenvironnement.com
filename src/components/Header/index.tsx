@@ -1,4 +1,8 @@
-import React, { useEffect, useRef, useCallback } from 'react';
+import React, {
+  useEffect,
+  useRef,
+  useCallback,
+} from 'react';
 import classnames from 'classnames';
 import {
   Collapse,
@@ -9,7 +13,13 @@ import {
 import HeaderLogo from './HeaderLogo';
 import HeaderItem from './HeaderItem';
 
-const Header = () => {
+interface Header {
+  aProposRef: React.MutableRefObject<HTMLDivElement | null>;
+}
+
+const Header = ({
+  aProposRef
+}: Header) => {
   const [navbarColor, setNavbarColor] = React.useState('navbar-transparent');
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -76,18 +86,22 @@ const Header = () => {
             <HeaderItem
               title="À propos"
               toggleNavbar={toggleNavbarCollapse}
+              sectionRef={aProposRef}
             />
             <HeaderItem
               title="Nos clients"
               toggleNavbar={toggleNavbarCollapse}
+              sectionRef={aProposRef}
             />
             <HeaderItem
               title="Nos services"
               toggleNavbar={toggleNavbarCollapse}
+              sectionRef={aProposRef}
             />
             <HeaderItem
               title="Nous joindre"
               toggleNavbar={toggleNavbarCollapse}
+              sectionRef={aProposRef}
             />
           </Nav>
         </Collapse>

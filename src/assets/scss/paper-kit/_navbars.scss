@@ -55,6 +55,7 @@
 
   .navbar-nav {
     .nav-item .nav-link {
+      cursor: pointer;
       line-height: 1.6;
       margin: $navbar-margin-a;
       padding: $navbar-padding-a;
