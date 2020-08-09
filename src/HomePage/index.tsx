@@ -1,9 +1,9 @@
-import React from 'react';
-import AccueilSection from './AccueilSection';
-import AProposSection from './AProposSection';
-import NosClientsSection from './NosClientsSection';
-import NosServicesSection from './NosServicesSection';
-import NousJoindreSection from './NousJoindreSection';
+import React from "react";
+import AccueilSection from "./AccueilSection";
+import AProposSection from "./AProposSection";
+import NosClientsSection from "./NosClientsSection";
+import NosServicesSection from "./NosServicesSection";
+import NousJoindreSection from "./NousJoindreSection";
 
 interface HomePage {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -24,12 +24,8 @@ const HomePage = ({
       <div className="main">
         <AProposSection aProposRef={aProposRef} />
         <NosClientsSection nosClientsRef={nosClientsRef} />
-        <NosServicesSection
-          nosServicesRef={nosServicesRef}
-        />
-        <NousJoindreSection
-          nousJoindreRef={nousJoindreRef}
-        />
+        <NosServicesSection nosServicesRef={nosServicesRef} />
+        <NousJoindreSection nousJoindreRef={nousJoindreRef} />
       </div>
     </>
   );
