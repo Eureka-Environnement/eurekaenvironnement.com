@@ -58,7 +58,7 @@ const NousJoindreSection = ({
   };
 
   return (
-    <div className="section text-section" ref={nousJoindreRef}>
+    <div className="section text-center section-full-viewport" ref={nousJoindreRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="8">

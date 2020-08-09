@@ -8,8 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import 'assets/scss/paper-kit.scss';
 
 function App() {
-
   const aProposRef = useRef<null | HTMLDivElement>(null);
+  const nosClientsRef = useRef<null | HTMLDivElement>(null);
   const nosServicesRef = useRef<null | HTMLDivElement>(null);
   const nousJoindreRef = useRef<null | HTMLDivElement>(null);
 
@@ -18,11 +18,13 @@ function App() {
       <div>
         <Header
           aProposRef={aProposRef}
+          nosClientsRef={nosClientsRef}
           nosServicesRef={nosServicesRef}
           nousJoindreRef={nousJoindreRef}
         />
         <HomePage
           aProposRef={aProposRef}
+          nosClientsRef={nosClientsRef}
           nosServicesRef={nosServicesRef}
           nousJoindreRef={nousJoindreRef}
         />
