@@ -7,7 +7,12 @@ const AccueilSection = () => {
       <div className="filter" />
       <Container>
         <div className="motto text-center">
-          <h1>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h1>
+          <h1>Experts-conseil en environnement</h1>
+          <h1>
+            <small className="text-muted">
+              Eaux, Sols, Matières résiduelles
+            </small>
+          </h1>
           <br />
         </div>
       </Container>

@@ -7,22 +7,22 @@ interface NosClientsSection {
 
 const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
   return (
-    <div className="section text-center section-full-viewport" ref={nosClientsRef}>
+    <div
+      className="section text-center section-full-viewport"
+      ref={nosClientsRef}
+    >
       <Container>
         <Row>
           <div className="ml-auto mr-auto col-md-8">
-            <h2 className="title">Nos clients</h2>
+            <h2 className="title">Qui sont nos clients?</h2>
             <h5 className="description">
-              This is the paragraph where you can write more details about your
-              product. Keep you user engaged by providing meaningful
-              information. Remember that by this time, the user is curious,
-              otherwise he wouldn't scroll to get here. Add a button if you want
-              the user to see more.
+              Vous! Que vous soyez un particulier, un commerçant, un
+              entrepreneur, un gestionnaire d’usine ou opérateurs de station
+              d’épuration ou d’assainissement, nous avons des solutions pour
+              vous. Nous œuvrons tant dans les secteurs résidentiels,
+              commercial, municipal et industriel.
             </h5>
             <br />
-            <a href="#pablo" className="btn-round btn btn-info">
-              See Details
-            </a>
           </div>
         </Row>
         <Row></Row>
