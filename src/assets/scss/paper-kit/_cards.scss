@@ -556,3 +556,36 @@
       font-size: 1em;
   }
 }
+
+.card {
+    &.green {
+        background-color: #86d9ab;
+    }
+
+    &.blue {
+        background-color: #6ec7e0;
+    }
+
+    &.purple {
+        background-color: #cc90cc;
+    }
+
+    &.brown {
+        background-color: #e4c4a1;
+    }
+
+    .card-body {
+        .card-title {
+            &.service {
+                color: #ffffff;
+            }
+        }
+
+        .card-text {
+            &.service {
+                color: #ffffff;
+                text-align: left;
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@ interface NosClientsSection {
 const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
   return (
     <div
-      className="section text-center section-full-viewport"
+      className="section text-center"
       ref={nosClientsRef}
     >
       <Container>

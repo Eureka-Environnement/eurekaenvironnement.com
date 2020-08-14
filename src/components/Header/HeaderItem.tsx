@@ -21,7 +21,7 @@ const HeaderItem = ({
         onClick={() => {
           window.innerWidth < 992 && toggleNavbar();
           window.scroll({
-            top: sectionRef.current ? sectionRef?.current?.offsetTop : 0,
+            top: sectionRef.current ? sectionRef?.current?.offsetTop - 70 : 0,
             behavior: 'smooth'
           });
         }}

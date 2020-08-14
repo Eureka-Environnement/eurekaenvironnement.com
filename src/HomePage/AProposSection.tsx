@@ -23,7 +23,7 @@ const carouselItems = [
 
 const AProposSection = ({ aProposRef }: AProposSection) => {
   return (
-    <div className="section text-center section-full-viewport" ref={aProposRef}>
+    <div className="section text-center" ref={aProposRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">
