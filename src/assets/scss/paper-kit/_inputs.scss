@@ -154,7 +154,18 @@
     }
 }
 
+label {
+  font-weight: 400;
+}
+
 .input-group {
+  input {
+    font-weight: 400;
+    &::placeholder {
+      font-weight: 300;
+    }
+  }
+
   &.no-border{
     .input-group-text {
       border: 0;
@@ -162,10 +173,13 @@
   }
 }
 
-
 textarea.form-control{
     padding: 10px 18px;
     height: auto;
+    font-weight: 400;
+    &::placeholder {
+      font-weight: 300;
+    }
 }
 .form-group{
     position: relative;

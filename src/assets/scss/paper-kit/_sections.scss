@@ -2,7 +2,14 @@
     padding: 70px 0;
     position: relative;
     background-color: #FFFFFF;
-    
+
+    .title {
+        &.sub-section {
+            text-align: center;
+            margin-top: 0
+        }
+    }
+
     &.section-a-propos{
         background-color: #cbdff8;
     }

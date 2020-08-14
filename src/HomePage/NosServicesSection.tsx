@@ -2,7 +2,7 @@ import React from "react";
 import {
   Col,
   Container,
-  Row
+  Row,
 } from "reactstrap";
 
 interface NosServicesSection {
@@ -18,9 +18,36 @@ const NosServicesSection = ({
         <Row>
           <Col className="ml-auto mr-auto" md="12">
             <h2 className="title">Nos Services</h2>
-            <h5 className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus, purus sit amet iaculis finibus, diam urna consectetur leo, at eleifend sapien nulla eget neque. Aenean fringilla dapibus vulputate. Donec imperdiet erat a magna iaculis efficitur. Fusce egestas risus lobortis erat pulvinar, ac posuere nibh blandit. Praesent faucibus mattis odio et aliquet. Aenean at lacus rutrum, elementum velit pretium, molestie justo. Etiam pharetra tincidunt consequat. Nunc diam arcu, iaculis sed semper posuere, posuere euismod augue.
-            </h5>
+            <h3 className="title sub-section">Nos experts sont la pour répondre à toutes vos questions!</h3>
+            <p className="description" style={{ textAlign: 'left' }}>
+              <ul>
+                <li>Eaux pluviales</li>
+                <li>Gestion (rétention) et plans de drainage</li>
+                <li>Aménagement de parcs et places publiques</li>
+                <li>Plans de stationnements et puisards</li>
+                <li>Bassins de rétention et jardins de pluie</li>
+                <li>Eau potable</li>
+                <li>Suivi et test de qualité</li>
+                <li>Eaux usées</li>
+                <li>Installations sceptiques</li>
+                <li>Résidentielles autonomes et commerces (q-2, r.22)</li>
+                <li>Municipales (suivi, analyse et assistance)</li>
+                <li>Industrielles (lqe, article 22)</li>
+                <li>Sols et eaux souterraines</li>
+                <li>Évaluation environnementale de site (ées phase i)</li>
+                <li>Caractérisation environnementale de site (ées phase ii)</li>
+                <li>Contrôle de l’érosion (stabilisation, aménagement des berges)</li>
+                <li>Échantillonnage et analyse</li>
+                <li>Démantèlement de réservoir souterrains</li>
+                <li>Certificat d’autorisation</li>
+                <li>Article 32 de la loi sur la qualité de l’environnement (lqe))</li>
+                <li>Plans et devis</li>
+                <li>Formations</li>
+                <li>Différentes formations spécialisées et personnalisées par nos experts</li>
+                <li>Recherche et développement</li>
+                <li>Gestion décentralisée des eaux usées</li>
+              </ul>
+            </p>
           </Col>
         </Row>
       </Container>
