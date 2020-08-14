@@ -82,6 +82,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         text-align: left;
     }
 }
+.light-text{
+    color: $white-color;
+    text-align: center;
+}
 blockquote small{
     font-style: normal;
 }

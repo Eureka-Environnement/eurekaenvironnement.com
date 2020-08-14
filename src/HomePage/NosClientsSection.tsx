@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Handshake from "components/Icons/Handshake";
 
 interface NosClientsSection {
@@ -8,26 +8,26 @@ interface NosClientsSection {
 
 const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
   return (
-    <div
-      className="section text-center"
-      ref={nosClientsRef}
-    >
+    <div className="section text-center" ref={nosClientsRef}>
       <Container>
         <Row>
-          <div className="ml-auto mr-auto col-md-8">
-            <Handshake />
+          <Col className="ml-auto mr-auto" md="12">
+            <Handshake className="handshake"/>
             <h2 className="title">Qui sont nos clients?</h2>
-            <h5 className="description">
+            <hr />
+          </Col>
+        </Row>
+        <Row className="section-space-bottom">
+          <Col>
+            <h4 className="description">
               Vous! Que vous soyez un particulier, un commerçant, un
               entrepreneur, un gestionnaire d’usine ou opérateurs de station
               d’épuration ou d’assainissement, nous avons des solutions pour
               vous. Nous œuvrons tant dans les secteurs résidentiels,
               commercial, municipal et industriel.
-            </h5>
-            <br />
-          </div>
+            </h4>
+          </Col>
         </Row>
-        <Row></Row>
       </Container>
     </div>
   );

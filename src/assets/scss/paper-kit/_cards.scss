@@ -558,20 +558,8 @@
 }
 
 .card {
-    &.green {
-        background-color: #86d9ab;
-    }
-
-    &.blue {
-        background-color: #6ec7e0;
-    }
-
-    &.purple {
-        background-color: #cc90cc;
-    }
-
-    &.brown {
-        background-color: #e4c4a1;
+    &.service-card {
+        background-color: $eureka-color-2;
     }
 
     .card-body {
