@@ -6,20 +6,6 @@ interface AProposSection {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
-const carouselItems = [
-  {
-    src:
-      `${window.location.origin}/eurekaenvironnement.com/img/riviere-eaux-traitement.jpg`,
-    altText: "Slide 1",
-    caption: "",
-  },
-  {
-    src:
-      `${window.location.origin}/eurekaenvironnement.com/img/traitement-eaux-residentiel.jpg`,
-    altText: "Slide 1",
-    caption: "",
-  },
-];
 
 const AProposSection = ({ aProposRef }: AProposSection) => {
   return (
