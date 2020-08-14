@@ -984,5 +984,14 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 450px){
+    .navbar {
+        .navbar-translate {
+            .navbar-brand {
+                margin-left: 12px;
+            }
+        }
+    }
 }
