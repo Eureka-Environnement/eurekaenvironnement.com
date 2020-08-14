@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import {
   Button,
   Col,
@@ -7,53 +7,41 @@ import {
   Input,
   InputGroup,
   Label,
-  Row
+  Row,
 } from "reactstrap";
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaPhone
-} from "react-icons/fa";
+import { FaFacebookSquare, FaLinkedin, FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const ToastConfigs = {
   draggable: false,
   closeOnClick: true,
   position: toast.POSITION.BOTTOM_RIGHT,
-  autoClose: 5000
+  autoClose: 5000,
 };
 
 interface NousJoindreSection {
   nousJoindreRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
-const NousJoindreSection = ({
-  nousJoindreRef
-}: NousJoindreSection) => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+const NousJoindreSection = ({ nousJoindreRef }: NousJoindreSection) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const resetInputs = () => {
-    setName('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
   };
 
   const sendEmail = () => {
     if (name && email && subject && message) {
-      toast.success(
-        'Courriel envoyé!',
-        ToastConfigs
-      );
+      toast.success("Courriel envoyé!", ToastConfigs);
       resetInputs();
     } else {
-      toast.error(
-        'Veuillez remplir toutes les sections.',
-        ToastConfigs
-      );
+      toast.error("Veuillez remplir toutes les sections.", ToastConfigs);
     }
   };
 
@@ -62,65 +50,83 @@ const NousJoindreSection = ({
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="8">
-            <h2 className="title text-center">Pour nous rejoindre</h2>
+            <h1 className="title text-center eureka">Pour nous rejoindre</h1>
           </Col>
         </Row>
         <Row>
-          <Col md="3">
-            <div className="info">
-              <div className="icon icon-info">
-                <FaPhone color="#01184f" />
-              </div>
-              <div className="description">
-                <p className="description">
-                  450-300-4045<br />819-415-5535
-                </p>
-              </div>
-            </div>
+          <Col md="3" className="center-horizontal">
+            <Row className="icon icon-info center-horizontal">
+              <FaPhone
+                color="#01184f"
+                size="55px"
+                className="center-horizontal phone-icon"
+              />
+            </Row>
+            <Row className="center-horizontal">
+              <p className="description center-horizontal">
+                450-300-4045 | 819-415-5535
+              </p>
+            </Row>
           </Col>
-          <Col md="3">
+          <Col md="3" className="center-horizontal">
             <a href="mailto:info@eurekaenvironnement.com">
-              <div className="info">
-                <div className="icon icon-info">
-                  <MdEmail color="#01184f" />
-                </div>
-                <div className="description">
-                  <p className="description">
-                    info@eurekaenvironnement.com
-                  </p>
-                </div>
-              </div>
+              <Row className="icon icon-info center-horizontal">
+                <MdEmail
+                  color="#01184f"
+                  size="60px"
+                  className="center-horizontal"
+                />
+              </Row>
+              <Row className="center-horizontal">
+                <p className="description center-horizontal">
+                  info@eurekaenvironnement.com
+                </p>
+              </Row>
             </a>
           </Col>
-          <Col md="3">
-            <div className="info">
-              <div className="icon icon-info">
-                <a
-                  className="mr-1 btn btn-link"
-                  title="Suivez nous sur Facebook"
-                  href="https://www.facebook.com/eurekaenv/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <FaFacebookSquare size="70" color="#01184f" />
-                </a>
-              </div>
-            </div>
+          <Col md="3" className="center-horizontal">
+            <a
+              className="mr-1 btn btn-link"
+              title="Suivez nous sur Facebook"
+              href="https://www.facebook.com/eurekaenv/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Row className="icon icon-info center-horizontal">
+                <FaFacebookSquare
+                  color="#01184f"
+                  size="60px"
+                  className="center-horizontal"
+                />
+              </Row>
+              <Row className="center-horizontal">
+                <p className="description center-horizontal lowercase-social">
+                  eurekaenv
+                </p>
+              </Row>
+            </a>
           </Col>
-          <Col md="3">
-            <div className="info">
-              <div className="icon icon-info">
-                <a
-                  className="mr-1 btn btn-link"
-                  title="Suivez nous sur Linkedin"
-                  href="https://www.linkedin.com/company/eurekaenvironnement"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <FaLinkedin size="70px" color="#01184f" />
-                </a>
-              </div>
-            </div>
+          <Col md="3" className="center-horizontal">
+            <a
+              className="mr-1 btn btn-link"
+              title="Suivez nous sur Linkedin"
+              href="https://www.linkedin.com/company/eurekaenvironnement"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Row className="icon icon-info center-horizontal">
+                <FaLinkedin
+                  color="#01184f"
+                  size="60px"
+                  className="center-horizontal"
+                />
+              </Row>
+              <Row className="center-horizontal">
+                <p className="description center-horizontal lowercase-social">
+                  eurekaenvironnement
+                </p>
+              </Row>
+            </a>
           </Col>
         </Row>
         <Row>
