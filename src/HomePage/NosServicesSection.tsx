@@ -26,13 +26,9 @@ const NosServicesSection = ({
                 <li>Aménagement de parcs et places publiques</li>
                 <li>Plans de stationnements et puisards</li>
                 <li>Bassins de rétention et jardins de pluie</li>
-                <li>Eau potable</li>
-                <li>Suivi et test de qualité</li>
-                <li>Eaux usées</li>
+                <li>Eau potable, Suivi et test de qualité, Eaux usées</li>
                 <li>Installations sceptiques</li>
-                <li>Résidentielles autonomes et commerces (q-2, r.22)</li>
-                <li>Municipales (suivi, analyse et assistance)</li>
-                <li>Industrielles (lqe, article 22)</li>
+                <li>Résidentielles autonomes et commerces (q-2, r.22), Municipales (suivi, analyse et assistance), Industrielles (lqe, article 22)</li>
                 <li>Sols et eaux souterraines</li>
                 <li>Évaluation environnementale de site (ées phase i)</li>
                 <li>Caractérisation environnementale de site (ées phase ii)</li>
@@ -42,7 +38,6 @@ const NosServicesSection = ({
                 <li>Certificat d’autorisation</li>
                 <li>Article 32 de la loi sur la qualité de l’environnement (lqe))</li>
                 <li>Plans et devis</li>
-                <li>Formations</li>
                 <li>Différentes formations spécialisées et personnalisées par nos experts</li>
                 <li>Recherche et développement</li>
                 <li>Gestion décentralisée des eaux usées</li>
