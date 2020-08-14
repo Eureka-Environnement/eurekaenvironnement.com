@@ -20,7 +20,7 @@ const HomePage = ({
 }: HomePage) => {
   return (
     <>
-      <AccueilSection />
+      <AccueilSection nousJoindreRef={nousJoindreRef} />
       <div className="main">
         <AProposSection aProposRef={aProposRef} />
         <NosClientsSection nosClientsRef={nosClientsRef} />
