@@ -79,16 +79,18 @@ const NousJoindreSection = ({
             </div>
           </Col>
           <Col md="3">
-            <div className="info">
-              <div className="icon icon-info">
-                <MdEmail color="#01184f" />
+            <a href="mailto:info@eurekaenvironnement.com">
+              <div className="info">
+                <div className="icon icon-info">
+                  <MdEmail color="#01184f" />
+                </div>
+                <div className="description">
+                  <p className="description">
+                    info@eurekaenvironnement.com
+                  </p>
+                </div>
               </div>
-              <div className="description">
-                <p className="description">
-                  <a href="mailto:info@eurekaenvironnement.com">info@eurekaenvironnement.com</a>
-                </p>
-              </div>
-            </div>
+            </a>
           </Col>
           <Col md="3">
             <div className="info">
@@ -100,7 +102,7 @@ const NousJoindreSection = ({
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <FaFacebookSquare size="70" color="3b5998" />
+                  <FaFacebookSquare size="70" color="#01184f" />
                 </a>
               </div>
             </div>
@@ -115,7 +117,7 @@ const NousJoindreSection = ({
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <FaLinkedin size="70px" color="0072B1" />
+                  <FaLinkedin size="70px" color="#01184f" />
                 </a>
               </div>
             </div>

@@ -1,7 +1,21 @@
 import React from "react";
-import { Container } from "reactstrap";
+import { Button, Container } from "reactstrap";
 
-const AccueilSection = () => {
+interface AccueilSection {
+  nousJoindreRef: React.MutableRefObject<HTMLDivElement | null>;
+}
+
+const AccueilSection = ({
+  nousJoindreRef
+}: AccueilSection) => {
+
+  const scrollToNousJoindre = () => {
+    window.scroll({
+      top: nousJoindreRef.current ? nousJoindreRef?.current?.offsetTop : 0,
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <div className="page-header">
       <div className="filter" />
@@ -14,6 +28,14 @@ const AccueilSection = () => {
             </small>
           </h1>
           <br />
+          <Button
+            className="btn-round"
+            color="primary"
+            outline
+            onClick={scrollToNousJoindre}
+          >
+            Demandez une consultation!
+          </Button>
         </div>
       </Container>
     </div>
