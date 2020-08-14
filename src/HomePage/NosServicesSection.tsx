@@ -19,7 +19,7 @@ const NosServicesSection = ({
           <Col className="ml-auto mr-auto" md="12">
             <h2 className="title">Nos Services</h2>
             <h3 className="title sub-section">Nos experts sont la pour répondre à toutes vos questions!</h3>
-            <p className="description" style={{ textAlign: 'left' }}>
+            <p className="description left">
               <ul>
                 <li>Eaux pluviales</li>
                 <li>Gestion (rétention) et plans de drainage</li>
