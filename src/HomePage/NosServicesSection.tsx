@@ -4,6 +4,7 @@ import {
   Container,
   Row,
 } from "reactstrap";
+import Water from 'components/Icons/Water';
 
 interface NosServicesSection {
   nosServicesRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -17,6 +18,7 @@ const NosServicesSection = ({
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">
+            <Water />
             <h2 className="title">Nos Services</h2>
             <h3 className="title sub-section">Nos experts sont la pour répondre à toutes vos questions!</h3>
             <p className="description left">

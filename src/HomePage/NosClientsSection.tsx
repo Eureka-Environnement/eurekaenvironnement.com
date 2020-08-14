@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
+import Handshake from "components/Icons/Handshake";
 
 interface NosClientsSection {
   nosClientsRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -14,6 +15,7 @@ const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
       <Container>
         <Row>
           <div className="ml-auto mr-auto col-md-8">
+            <Handshake />
             <h2 className="title">Qui sont nos clients?</h2>
             <h5 className="description">
               Vous! Que vous soyez un particulier, un commerçant, un

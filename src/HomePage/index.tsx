@@ -18,6 +18,7 @@ const HomePage = ({
   nosServicesRef,
   nousJoindreRef,
 }: HomePage) => {
+  console.log(window.location)
   return (
     <>
       <AccueilSection nousJoindreRef={nousJoindreRef} />
