@@ -1,6 +1,6 @@
 import React from "react";
-import { Col, Container, Row, UncontrolledCarousel } from "reactstrap";
-import AboutUs from "../components/Icons/AboutUs"
+import { Col, Container, Row } from "reactstrap";
+import AboutUs from "../components/Icons/AboutUs";
 
 interface AProposSection {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -27,15 +27,13 @@ const AProposSection = ({ aProposRef }: AProposSection) => {
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">
-            <AboutUs className="icon-primary"/>
+            <AboutUs className="icon-about-us" />
             <h1 className="title">À Propos</h1>
+            <hr />
           </Col>
         </Row>
-        <Row>
-          <Col md="6">
-            <UncontrolledCarousel items={carouselItems} />
-          </Col>
-          <Col md="6">
+        <Row className="section-space-bottom">
+          <Col>
             <h4 className="description">
               Eurêka Environnement est une firme de génie-conseil spécialisée
               dans la gestion de l’eau et la conception de systèmes de

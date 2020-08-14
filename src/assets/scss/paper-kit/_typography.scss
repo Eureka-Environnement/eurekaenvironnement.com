@@ -73,9 +73,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-transform: uppercase;
 }
 .description{
+    word-spacing: 10px;
     color: $black-color;
     font-weight: 400;
-    text-align: center;
+    text-align: justify;
     line-height: 28px;
     &.left {
         text-align: left;
