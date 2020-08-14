@@ -9,13 +9,13 @@ interface AProposSection {
 const carouselItems = [
   {
     src:
-      "http://localhost:3000/eurekaenvironnement.com/img/riviere-eaux-traitement.jpg",
+      `${window.location.origin}/eurekaenvironnement.com/img/riviere-eaux-traitement.jpg`,
     altText: "Slide 1",
     caption: "",
   },
   {
     src:
-      "http://localhost:3000/eurekaenvironnement.com/img/traitement-eaux-residentiel.jpg",
+      `${window.location.origin}/eurekaenvironnement.com/img/traitement-eaux-residentiel.jpg`,
     altText: "Slide 1",
     caption: "",
   },
