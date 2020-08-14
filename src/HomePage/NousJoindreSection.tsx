@@ -50,7 +50,7 @@ const NousJoindreSection = ({ nousJoindreRef }: NousJoindreSection) => {
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="8">
-            <h1 className="title text-center eureka">Pour nous rejoindre</h1>
+            <h1 className="title eureka">Pour nous rejoindre</h1>
           </Col>
         </Row>
         <Row>
