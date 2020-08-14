@@ -28,7 +28,7 @@ const AProposSection = ({ aProposRef }: AProposSection) => {
         <Row>
           <Col className="ml-auto mr-auto" md="12">
             <AboutUs className="icon-about-us" />
-            <h1 className="title">À Propos</h1>
+            <h1 className="title eureka">À Propos</h1>
             <hr />
           </Col>
         </Row>

@@ -1,3 +1,8 @@
+$eureka-color-1:             #01184f !default;
+$eureka-color-2:             #244491 !default;
+$eureka-color-3:             #3e9ae5 !default;
+$eureka-color-4:             #70d3e4 !default;
+
 $font-color:                 #66615b !default;
 $fill-font-color:            rgba(255, 255, 255, 0.8);
 $font-family-sans-serif:     'Montserrat', "Helvetica", Arial, sans-serif;
@@ -38,7 +43,7 @@ $default-color:              #66615B !default;
 $default-bg:                 #66615B !default;
 $default-states-color:       #403D39 !default;
 
-$primary-color:              #70d3e4 !default;
+$primary-color:              $eureka-color-4 !default;
 $primary-states-color:       darken($primary-color, 10%) !default;
 
 $success-color:              #6bd098 !default;
@@ -60,11 +65,6 @@ $purple-states-color:        darken($purple-color, 8%) !default;
 
 $brown-color:                #dcb285 !default;
 $brown-states-color:         darken($brown-color, 8%) !default;
-
-$eureka-color-1:             #01184f !default;
-$eureka-color-2:             #244491 !default;
-$eureka-color-3:             #3e9ae5 !default;
-$eureka-color-4:             #70d3e4 !default;
 
 
 /*      light colors - used for select dropdown         */
