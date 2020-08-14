@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row, UncontrolledCarousel } from "reactstrap";
+import AboutUs from "../components/Icons/AboutUs"
 
 interface AProposSection {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -22,11 +23,12 @@ const carouselItems = [
 
 const AProposSection = ({ aProposRef }: AProposSection) => {
   return (
-    <div className="section text-center section-full-viewport section-a-propos" ref={aProposRef}>
+    <div className="section text-center section-full-viewport" ref={aProposRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">
-            <h1 className="title title-spacing">À Propos</h1>
+            <AboutUs className="icon-primary"/>
+            <h1 className="title">À Propos</h1>
           </Col>
         </Row>
         <Row>

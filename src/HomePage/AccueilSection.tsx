@@ -23,7 +23,7 @@ const AccueilSection = ({
         <div className="motto text-center">
           <h1>Experts-conseil en environnement</h1>
           <h1>
-            <small className="text-muted">
+            <small className="text-white">
               Eaux, Sols, Matières résiduelles
             </small>
           </h1>
