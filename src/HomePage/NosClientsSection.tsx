@@ -13,7 +13,7 @@ const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
         <Row>
           <Col className="ml-auto mr-auto" md="12">
             <Handshake className="handshake"/>
-            <h2 className="title">Qui sont nos clients?</h2>
+            <h1 className="title eureka">Qui sont nos clients?</h1>
             <hr />
           </Col>
         </Row>

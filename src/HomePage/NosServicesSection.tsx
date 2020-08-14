@@ -2,7 +2,6 @@ import React from "react";
 import {
   Card,
   CardBody,
-  CardTitle,
   CardText,
   Col,
   Container,
@@ -22,8 +21,8 @@ const NosServicesSection = ({ nosServicesRef }: NosServicesSection) => {
         <Row>
           <Col className="ml-auto mr-auto" md="12">
             <Water className="water" />
-            <h2 className="title">Nos Services</h2>
-            <h2 className="title sub-section">
+            <h1 className="title eureka">Nos Services</h1>
+            <h2 className="title sub-section eureka">
               <small>
                 Nos experts sont la pour répondre à toutes vos questions!
               </small>
