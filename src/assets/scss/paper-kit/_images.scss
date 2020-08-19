@@ -17,6 +17,7 @@
     width: 40px;
 }
 .img-circle{
+    image-rendering: auto;
     height: 200px;
     width: 200px;
     object-fit: cover;
