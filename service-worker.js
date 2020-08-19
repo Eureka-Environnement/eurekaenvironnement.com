@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/eurekaenvironnement.com/precache-manifest.2660a612bf3e75a43ad2eb3387f5c968.js"
+  "/eurekaenvironnement.com/precache-manifest.418a44dabc5563f598b0e08018e22c25.js"
 );
 
 self.addEventListener('message', (event) => {
