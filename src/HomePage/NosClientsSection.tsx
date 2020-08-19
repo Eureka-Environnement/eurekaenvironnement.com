@@ -8,7 +8,7 @@ interface NosClientsSection {
 
 const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
   return (
-    <div className="section text-center" ref={nosClientsRef}>
+    <div className="section section-dark text-center" ref={nosClientsRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">
@@ -26,6 +26,21 @@ const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
               vous. Nous œuvrons tant dans les secteurs résidentiels,
               commercial, municipal et industriel.
             </h4>
+          </Col>
+        </Row>
+        
+        <Row>
+          <Col md="4">
+            <img className="img-circle img-no-padding img-responsive" src={`${window.location.origin}/eurekaenvironnement.com/img/traitement-des-eaux.jpg`} alt=""/>
+            <p className="text-center text-white">Description 1</p>
+          </Col>
+          <Col md="4">
+            <img className="img-circle img-no-padding img-responsive" src={`${window.location.origin}/eurekaenvironnement.com/img/traitement-eaux-clarificateur.jpg`} alt=""/>
+            <p className="text-center text-white">Description 2</p>
+          </Col>
+          <Col md="4">
+            <img className="img-circle img-no-padding img-responsive" src={`${window.location.origin}/eurekaenvironnement.com/img/fosse-septique.jpg`} alt=""/>
+            <p className="text-center text-white">Description 3</p>
           </Col>
         </Row>
       </Container>

@@ -33,6 +33,16 @@ const AProposSection = ({ aProposRef }: AProposSection) => {
             </h4>
           </Col>
         </Row>
+        <Row>
+          <Col md="6">
+            <img className="img-rounded img-responsive" src={`${window.location.origin}/eurekaenvironnement.com/img/riviere-eaux-traitement.jpg`} alt=""/>
+            <p className="text-center">Riviere eaux traitement</p>
+          </Col>
+          <Col md="6">
+            <img className="img-rounded img-responsive" src={`${window.location.origin}/eurekaenvironnement.com/img/traitement-eaux-residentiel.jpg`} alt=""/>
+            <p className="text-center">Traitement eaux residentiel</p>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
