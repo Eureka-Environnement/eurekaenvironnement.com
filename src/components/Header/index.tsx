@@ -15,16 +15,16 @@ import HeaderItem from './HeaderItem';
 
 interface Header {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
-  nosClientsRef: React.MutableRefObject<HTMLDivElement | null>;
   nosServicesRef: React.MutableRefObject<HTMLDivElement | null>;
-  nousJoindreRef: React.MutableRefObject<HTMLDivElement | null>;
+  realisationsRef: React.MutableRefObject<HTMLDivElement | null>;
+  contactRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
 const Header = ({
   aProposRef,
-  nosClientsRef,
   nosServicesRef,
-  nousJoindreRef,
+  realisationsRef,
+  contactRef,
 }: Header) => {
   const [navbarColor, setNavbarColor] = React.useState('navbar-transparent');
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -95,19 +95,19 @@ const Header = ({
               sectionRef={aProposRef}
             />
             <HeaderItem
-              title="Nos clients"
-              toggleNavbar={toggleNavbarCollapse}
-              sectionRef={nosClientsRef}
-            />
-            <HeaderItem
               title="Nos services"
               toggleNavbar={toggleNavbarCollapse}
               sectionRef={nosServicesRef}
             />
             <HeaderItem
+              title="Nos clients"
+              toggleNavbar={toggleNavbarCollapse}
+              sectionRef={realisationsRef}
+            />
+            <HeaderItem
               title="Contactez-nous"
               toggleNavbar={toggleNavbarCollapse}
-              sectionRef={nousJoindreRef}
+              sectionRef={contactRef}
             />
           </Nav>
         </Collapse>
