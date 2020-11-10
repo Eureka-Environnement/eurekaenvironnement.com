@@ -1,0 +1,17 @@
+.circular-menu {
+  .remove-center {
+    display: none;
+  }
+  &.center-menu {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -webkit-box;
+  }
+  .menu-element{
+    
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: $eureka-color-3;
+  }
+}
