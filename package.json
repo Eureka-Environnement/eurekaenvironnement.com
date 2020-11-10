@@ -17,11 +17,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
-<<<<<<< HEAD
     "react-typography": "^0.16.19",
-=======
-    "react-scripts": "3.4.1",
->>>>>>> master
     "reactstrap": "^8.5.1",
     "typescript": "^3.9.7",
     "typography": "^0.16.19"
