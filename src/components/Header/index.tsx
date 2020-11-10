@@ -105,7 +105,7 @@ const Header = ({
               sectionRef={nosServicesRef}
             />
             <HeaderItem
-              title="Nous joindre"
+              title="Contactez-nous"
               toggleNavbar={toggleNavbarCollapse}
               sectionRef={nousJoindreRef}
             />

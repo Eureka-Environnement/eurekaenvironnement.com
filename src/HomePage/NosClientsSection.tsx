@@ -8,7 +8,7 @@ interface NosClientsSection {
 
 const NosClientsSection = ({ nosClientsRef }: NosClientsSection) => {
   return (
-    <div className="section section-dark text-center" ref={nosClientsRef}>
+    <div className="section text-center" ref={nosClientsRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">

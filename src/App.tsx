@@ -1,10 +1,9 @@
 import React, { useRef } from 'react';
-import { ToastContainer } from 'react-toastify';
 import Header from 'components/Header';
+import Footer from 'components/Footer';
 import HomePage from 'HomePage/index';
 // styles
 import 'assets/css/bootstrap.min.css';
-import 'react-toastify/dist/ReactToastify.css';
 import 'assets/scss/paper-kit.scss';
 
 function App() {
@@ -28,8 +27,8 @@ function App() {
           nosServicesRef={nosServicesRef}
           nousJoindreRef={nousJoindreRef}
         />
+        <Footer />
       </div>
-      <ToastContainer />
     </>
   );
 }

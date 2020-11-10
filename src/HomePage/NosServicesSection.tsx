@@ -27,7 +27,6 @@ const NosServicesSection = ({ nosServicesRef }: NosServicesSection) => {
                 Nos experts sont la pour répondre à toutes vos questions!
               </small>
             </h2>
-
             <hr />
           </Col>
         </Row>
