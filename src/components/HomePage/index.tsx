@@ -1,31 +1,29 @@
 import React from "react";
 import AccueilSection from "./AccueilSection";
 import AProposSection from "./AProposSection";
-import NosClientsSection from "./NosClientsSection";
 import NosServicesSection from "./NosServicesSection";
-import NousJoindreSection from "./NousJoindreSection";
+import ContactSection from "./ContactSection";
 
 interface HomePage {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
-  nosClientsRef: React.MutableRefObject<HTMLDivElement | null>;
   nosServicesRef: React.MutableRefObject<HTMLDivElement | null>;
-  nousJoindreRef: React.MutableRefObject<HTMLDivElement | null>;
+  realisationsRef: React.MutableRefObject<HTMLDivElement | null>;
+  contactRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
 const HomePage = ({
   aProposRef,
-  nosClientsRef,
   nosServicesRef,
-  nousJoindreRef,
+  realisationsRef,
+  contactRef,
 }: HomePage) => {
   return (
     <>
-      <AccueilSection nousJoindreRef={nousJoindreRef} />
+      <AccueilSection nousJoindreRef={contactRef} />
       <div className="main">
         <AProposSection aProposRef={aProposRef} />
-        <NosClientsSection nosClientsRef={nosClientsRef} />
         <NosServicesSection nosServicesRef={nosServicesRef} />
-        <NousJoindreSection nousJoindreRef={nousJoindreRef} />
+        <ContactSection contactRef={contactRef} />
       </div>
     </>
   );

@@ -5,13 +5,13 @@ import {
   Row,
 } from "reactstrap";
 
-interface NousJoindreSection {
-  nousJoindreRef: React.MutableRefObject<HTMLDivElement | null>;
+interface ContactSection {
+  contactRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
-const NousJoindreSection = ({ nousJoindreRef }: NousJoindreSection) => {
+const ContactSection = ({ contactRef }: ContactSection) => {
   return (
-    <div className="section text-center" ref={nousJoindreRef}>
+    <div className="section text-center" ref={contactRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">
@@ -68,4 +68,4 @@ const NousJoindreSection = ({ nousJoindreRef }: NousJoindreSection) => {
   );
 };
 
-export default NousJoindreSection;
+export default ContactSection;
