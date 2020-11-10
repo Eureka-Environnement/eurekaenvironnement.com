@@ -1,1 +1,0 @@
-module.exports = require("C:\\Dev\\eurekaenvironnement.com\\src\\utils\\typography")
