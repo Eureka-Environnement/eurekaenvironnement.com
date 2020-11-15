@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  Card,
-  CardBody,
-  CardText,
-  Col,
-  Container,
-  Row,
-  Table,
-} from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import Water from "components/Icons/Water";
+import { Planet } from "react-planet";
+import MenuCirculaireSection from "./MenuCirculaireSection";
 
 interface NosServicesSection {
   nosServicesRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -22,142 +16,52 @@ const NosServicesSection = ({ nosServicesRef }: NosServicesSection) => {
           <Col className="ml-auto mr-auto" md="12">
             <Water className="water" />
             <h1 className="title eureka">Nos Services</h1>
+            <hr />
             <h2 className="title sub-section eureka">
               <small>
                 Nos experts sont la pour répondre à toutes vos questions!
               </small>
             </h2>
-            <hr />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm="3">
-            <Card className="service-card">
-              <CardBody>
-                <CardText tag="div" className="service">
-                  <Table borderless className="light-text">
-                    <tbody>
-                      <tr>
-                        <td>Eaux pluviales</td>
-                      </tr>
-                      <tr>
-                        <td>Gestion (rétention) et plans de drainage</td>
-                      </tr>
-                      <tr>
-                        <td>Aménagement de parcs et places publiques</td>
-                      </tr>
-                      <tr>
-                        <td>Plans de stationnements et puisards</td>
-                      </tr>
-                      <tr>
-                        <td>Plans de stationnements et puisards</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col sm="3">
-            <Card className="service-card">
-              <CardBody>
-                <CardText tag="div" className="service">
-                  <Table borderless className="light-text">
-                    <tbody>
-                      <tr>
-                        <td>
-                          Eau potable, Suivi et test de qualité, Eaux usées
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Installations sceptiques</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Résidentielles autonomes et commerces (q-2, r.22),
-                          Municipales (suivi, analyse et assistance),
-                          Industrielles (lqe, article 22)
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Sols et eaux souterraines</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Évaluation environnementale de site (ées phase i)
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col sm="3">
-            <Card className="service-card">
-              <CardBody>
-                <CardText tag="div" className="service">
-                  <Table borderless className="light-text">
-                    <tbody>
-                      <tr>
-                        <td>
-                          Caractérisation environnementale de site (ées phase
-                          ii)
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Contrôle de l’érosion (stabilisation, aménagement des
-                          berges)
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Échantillonnage et analyse</td>
-                      </tr>
-                      <tr>
-                        <td>Démantèlement de réservoir souterrains</td>
-                      </tr>
-                      <tr>
-                        <td>Certificat d’autorisation</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Article 32 de la loi sur la qualité de l’environnement
-                          (lqe))
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </CardText>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col sm="3">
-            <Card className="service-card">
-              <CardBody>
-                <CardText tag="div" className="service">
-                  <Table borderless className="light-text">
-                    <tbody>
-                      <tr>
-                        <td>Plans et devis</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Différentes formations spécialisées et personnalisées
-                          par nos experts
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Recherche et développement</td>
-                      </tr>
-                      <tr>
-                        <td>Gestion décentralisée des eaux usées</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </CardText>
-              </CardBody>
-            </Card>
+            <Container className="circular-menu center-menu">
+              <Planet open orbitRadius={150} hideOrbit>
+                <MenuCirculaireSection
+                  buttonTitle="Conseil et gestion de l'eau"
+                  popoverId="UncontrolledPopover-Conseil"
+                  popoverHeader=""
+                  popoverBody={["Accompagnement technologique","Municipalité","Projets d'optimisation","Changement climatique"]}
+                  popoverPlacement="left-end"
+                />
+                <MenuCirculaireSection
+                  buttonTitle="Eau"
+                  popoverId="UncontrolledPopover-Eau"
+                  popoverHeader=""
+                  popoverBody={["Eaux pluie","Eaux usées","Eaux potables"]}
+                  popoverPlacement="left"
+                />
+
+                <MenuCirculaireSection
+                  buttonTitle="Sol"
+                  popoverId="UncontrolledPopover-Sol"
+                  popoverHeader=""
+                  popoverBody={["Sol 1; Sol 2","Stabilité des berges"]}
+                  popoverPlacement="top"
+                />
+                <MenuCirculaireSection
+                  buttonTitle="Tests residentiels"
+                  popoverId="UncontrolledPopover-residentiels"
+                  popoverHeader=""
+                  popoverBody={["Tests de sol","Puits","Tests eau","Inspection"]}
+                  popoverPlacement="right"
+                />
+                <MenuCirculaireSection
+                  buttonTitle="Projets speciaux"
+                  popoverId="UncontrolledPopover-Speciaux"
+                  popoverHeader=""
+                  popoverBody={["Gestion eau","Stratégies de développement"]}
+                  popoverPlacement="right-end"
+                />
+              </Planet>
+            </Container>
           </Col>
         </Row>
       </Container>
