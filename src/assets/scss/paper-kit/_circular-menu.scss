@@ -6,11 +6,14 @@
     -webkit-box-align: center;
     -webkit-box-pack: center;
     display: -webkit-box;
+    &.container {
+      margin-top: 290px;
+      margin-bottom: 90px;
+    }
   }
-  .menu-element{
-
-    height: 130px;
-    width: 130px;
+  .menu-element {
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     background-color: $eureka-color-3;
   }

@@ -10,7 +10,7 @@ interface MenuCirculaireSection {
   buttonTitle: string;
   popoverId: string;
   popoverHeader: string;
-  popoverBody: string;
+  popoverBody: string[];
   popoverPlacement:
     | "auto-start"
     | "auto"
@@ -42,7 +42,13 @@ const MenuCirculaireSection = ({
       {buttonTitle}
       <UncontrolledPopover placement={popoverPlacement} target={popoverId}>
         <PopoverHeader>{popoverHeader}</PopoverHeader>
-        <PopoverBody>{popoverBody}</PopoverBody>
+        <PopoverBody>
+          <ul>
+            {popoverBody.map((element) => (
+              <li>{element}</li>
+            ))}
+          </ul>
+        </PopoverBody>
       </UncontrolledPopover>
     </Button>
   );
