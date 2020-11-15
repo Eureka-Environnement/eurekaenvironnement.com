@@ -1,5 +1,6 @@
 /* eslint-disable */
 module.exports = {
+  pathPrefix: "/eurekaenvironnement.com",
   siteMetadata: {
     title: 'Eurêka Environnement',
     description: 'Eurêka Environnement est une firme de génie-conseil spécialisée dans la gestion de l’eau et la conception de systèmes de traitement.',

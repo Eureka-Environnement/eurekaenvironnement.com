@@ -100,7 +100,7 @@ const Header = ({
               sectionRef={nosServicesRef}
             />
             <HeaderItem
-              title="Nos clients"
+              title="Nos réalisations"
               toggleNavbar={toggleNavbarCollapse}
               sectionRef={realisationsRef}
             />

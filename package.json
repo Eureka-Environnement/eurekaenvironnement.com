@@ -25,8 +25,7 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "predeploy": "gatsby build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "eslintConfig": {
     "extends": "react-app"
