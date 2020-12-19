@@ -20,7 +20,7 @@ const AccueilSection = ({
     <div className="page-header">
       <div className="filter" />
       <Container>
-        <div className="motto text-center">
+        <div className="motto text-center landing">
           <h1>Experts-conseil en environnement</h1>
           <br />
           <Button
