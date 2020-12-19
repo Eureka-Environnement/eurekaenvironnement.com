@@ -19,11 +19,11 @@ const Footer = () => {
     };
   }, []);
   return (
-    <footer className="footer footer-black footer-white">
+    <footer className="footer footer-eureka footer-white">
       <Container className="footer-max-width">
-        <div className="credits ml-auto">
+        <div className="credits ml-auto center">
           <a
-            className="mr-1 btn btn-link"
+            className="mr-1 btn btn-link btn-facebook"
             title="Suivez nous sur Facebook"
             href="https://www.facebook.com/eurekaenv/"
             rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Footer = () => {
             <FaFacebookSquare size="36" />
           </a>
           <a
-            className="mr-1 btn btn-link"
+            className="mr-1 btn btn-link btn-linkedin"
             title="Suivez nous sur Linkedin"
             href="https://www.linkedin.com/company/eurekaenvironnement"
             rel="noopener noreferrer"
