@@ -3,7 +3,6 @@ import React, {
   useRef,
   useCallback,
 } from 'react';
-import classnames from 'classnames';
 import {
   Collapse,
   Navbar,
@@ -26,7 +25,6 @@ const Header = ({
   realisationsRef,
   contactRef,
 }: Header) => {
-  const [navbarColor, setNavbarColor] = React.useState('navbar-transparent');
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
@@ -34,32 +32,6 @@ const Header = ({
     setNavbarCollapse(!navbarCollapse);
     document.documentElement.classList.toggle('nav-open');
   }, [navbarCollapse, setNavbarCollapse]);
-
-  const setColor = () => {
-    const width = window.innerWidth / 5.5;
-    if (
-      document.documentElement.scrollTop > width - 1
-      || document.body.scrollTop > width - 1
-    ) {
-      setNavbarColor('');
-    } else if (
-      (document.documentElement.scrollTop < width
-      || document.body.scrollTop < width)
-    ) {
-      setNavbarColor('navbar-transparent');
-    }
-  };
-
-  useEffect(() => {
-    const updateNavbarColor = () => {
-      setColor();
-    };
-    setColor();
-    window.addEventListener('scroll', updateNavbarColor);
-    return function cleanup() {
-      window.removeEventListener('scroll', updateNavbarColor);
-    };
-  }, [setNavbarColor]);
 
   useEffect(() => {
     function handleClickOutside(e: any) {
@@ -76,7 +48,7 @@ const Header = ({
 
   return (
     <Navbar
-      className={classnames('fixed-top', navbarColor)}
+      className='fixed-top'
       color-on-scroll="300"
       expand="lg"
     >
