@@ -207,3 +207,53 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     position: relative;
     z-index: 2;
 }
+
+.cube-section{
+  .row .col{
+    padding: 20px;
+    height: 250px;
+    outline-offset:-3px;
+    border: white 2px solid; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+
+    &.rd{
+      background-color: $eureka-color-3;
+    }
+
+    &.eau{
+      background-color: $eureka-color-1;
+    }
+
+    &.genie-civil{
+      background-color: $eureka-color-3;
+    }
+
+    &.sol{
+      background-color: $eureka-color-4;
+    }
+
+    &.matieres-residuelles{
+      background-color: $eureka-color-1;
+    }
+
+    &.residentiel{
+      background-color: $eureka-color-4;
+    }
+
+  }
+  .row .col:before{
+    content: "";
+    top:2px;
+    left:2px;
+    right:2px;
+    bottom:2px;
+    outline: 2px solid $eureka-color-1;
+    position: absolute;
+  }
+}

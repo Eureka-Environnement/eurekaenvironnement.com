@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import Water from "components/Icons/Water";
+import CubeSection from "./CubeSection"
 
 interface NosServicesSection {
   nosServicesRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -20,6 +21,7 @@ const NosServicesSection = ({ nosServicesRef }: NosServicesSection) => {
                 Nos experts sont la pour répondre à toutes vos questions!
               </small>
             </h2>
+            <CubeSection/>
           </Col>
         </Row>
       </Container>
