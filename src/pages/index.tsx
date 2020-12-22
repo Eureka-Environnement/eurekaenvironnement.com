@@ -11,7 +11,6 @@ import 'assets/scss/paper-kit.scss';
 function Home() {
   const aProposRef = useRef<null | HTMLDivElement>(null);
   const nosServicesRef = useRef<null | HTMLDivElement>(null);
-  const realisationsRef = useRef<null | HTMLDivElement>(null);
   const contactRef = useRef<null | HTMLDivElement>(null);
 
   return (
@@ -20,13 +19,11 @@ function Home() {
       <Header
         aProposRef={aProposRef}
         nosServicesRef={nosServicesRef}
-        realisationsRef={realisationsRef}
         contactRef={contactRef}
       />
       <HomePage
         aProposRef={aProposRef}
         nosServicesRef={nosServicesRef}
-        realisationsRef={realisationsRef}
         contactRef={contactRef}
       />
       <Footer />

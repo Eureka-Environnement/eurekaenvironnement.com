@@ -221,6 +221,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     font-size: 20px;
     font-weight: 500;
     color: white;
+    
+    cursor: pointer;
 
     &.rd{
       background-color: $eureka-color-3;
