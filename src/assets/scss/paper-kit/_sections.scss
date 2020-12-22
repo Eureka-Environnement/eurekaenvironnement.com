@@ -21,7 +21,12 @@
             }
         }
     }
-
+    &.top-of-page {
+        padding-top: 145px;
+        @media (max-width: 411px) {
+            padding-top: 70px;
+          }
+    }
     &.section-a-propos{
         background-color: #cbdff8;
     }
