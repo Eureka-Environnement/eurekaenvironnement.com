@@ -17,7 +17,6 @@ interface Matieres {
 function Matieres({data}: Matieres) {
   const aProposRef = useRef<null | HTMLDivElement>(null);
   const nosServicesRef = useRef<null | HTMLDivElement>(null);
-  const realisationsRef = useRef<null | HTMLDivElement>(null);
   const contactRef = useRef<null | HTMLDivElement>(null);
   const subThemes = mapSubThemes(data);
   return (
@@ -26,7 +25,6 @@ function Matieres({data}: Matieres) {
       <Header
         aProposRef={aProposRef}
         nosServicesRef={nosServicesRef}
-        realisationsRef={realisationsRef}
         contactRef={contactRef}
       />
       <ThemePage subThemes={subThemes} />

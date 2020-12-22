@@ -18,7 +18,6 @@ interface Eau {
 function Eau({ data }: Eau) {
   const aProposRef = useRef<null | HTMLDivElement>(null);
   const nosServicesRef = useRef<null | HTMLDivElement>(null);
-  const realisationsRef = useRef<null | HTMLDivElement>(null);
   const contactRef = useRef<null | HTMLDivElement>(null);
   const subThemes = mapSubThemes(data);
   return (
@@ -27,7 +26,6 @@ function Eau({ data }: Eau) {
       <Header
         aProposRef={aProposRef}
         nosServicesRef={nosServicesRef}
-        realisationsRef={realisationsRef}
         contactRef={contactRef}
       />
       <ThemePage subThemes={subThemes} />
