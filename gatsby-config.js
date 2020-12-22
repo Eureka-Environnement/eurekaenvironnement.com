@@ -1,4 +1,9 @@
 /* eslint-disable */
+require("dotenv").config({
+  CMS_SPACE_ID: `.env.${process.env.CMS_SPACE_ID}`,
+  CMS_ACCESS_TOKEN: `.env.${process.env.CMS_ACCESS_TOKEN}`,
+});
+
 module.exports = {
   pathPrefix: "/eurekaenvironnement.com",
   siteMetadata: {
@@ -27,6 +32,13 @@ module.exports = {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CMS_SPACE_ID,
+        accessToken: process.env.CMS_ACCESS_TOKEN,
       },
     },
   ]
