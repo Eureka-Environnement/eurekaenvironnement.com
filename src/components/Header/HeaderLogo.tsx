@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
+import { Link } from 'gatsby';
 import classnames from 'classnames';
 import { NavbarBrand } from 'reactstrap';
+import { HOME_PAGE } from 'utils/constants';
 
 interface HeaderLogo {
   navbarCollapse: boolean;
@@ -30,6 +32,8 @@ const HeaderLogo = ({
       <NavbarBrand
         data-placement="bottom"
         className="navbar-logo"
+        to={HOME_PAGE}
+        tag={Link}
         id="logoBtn"
       />
       <button

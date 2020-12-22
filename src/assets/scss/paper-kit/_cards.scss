@@ -561,7 +561,11 @@
     &.service-card {
         background-color: $eureka-color-2;
     }
-
+    .card-title {
+        h3 {
+            font-weight: 400;
+        }
+    }
     .card-body {
         .card-title {
             &.service {
