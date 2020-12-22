@@ -15,14 +15,13 @@ import HeaderItem from './HeaderItem';
 interface Header {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
   nosServicesRef: React.MutableRefObject<HTMLDivElement | null>;
-  realisationsRef: React.MutableRefObject<HTMLDivElement | null>;
   contactRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
 const Header = ({
   aProposRef,
   nosServicesRef,
-  realisationsRef,
+  // realisationsRef,
   contactRef,
 }: Header) => {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -70,11 +69,6 @@ const Header = ({
               title="Nos services"
               toggleNavbar={toggleNavbarCollapse}
               sectionRef={nosServicesRef}
-            />
-            <HeaderItem
-              title="Nos réalisations"
-              toggleNavbar={toggleNavbarCollapse}
-              sectionRef={realisationsRef}
             />
             <HeaderItem
               title="Contactez-nous"
