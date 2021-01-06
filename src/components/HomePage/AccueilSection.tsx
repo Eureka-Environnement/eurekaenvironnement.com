@@ -28,7 +28,6 @@ const AccueilSection = ({
           <Button
             className="btn-round"
             color="primary"
-            outline
             onClick={scrollToNousJoindre}
           >
             Demandez une consultation!
