@@ -6,6 +6,13 @@ export const RECHERCHE_PAGE = '/recherche-et-developpement'
 export const MATIERES_PAGE = '/matieres-residuelles'
 export const SOL_PAGE = '/sol'
 
+export const RECHERCHE_ID = "9DBnCfNBEAAsWqpkn2ktv"
+export const GENIE_ID = "6Vg5EPnIcLDyEKyUwnOQof"
+export const MATIERES_ID = "7qBwcNqCMT9HpuhEkD0Sne"
+export const RESIDENTIEL_ID = "LcXKSBMEyzeJfLTydzYPr"
+export const SOL_ID = "4vLwbIphuyrjFMf6qzcZNZ"
+export const EAU_ID = "5PodCONh0xxf0cUWqoTtyl"
+
 interface subTheme {
   contentful_id: string;
   image: {
@@ -21,4 +28,26 @@ export interface ThemeData {
   contentfulTheme: {
     sousThemes: subTheme[];
   }
+}
+
+export interface HomePageData {
+  contentfulPagePrincipale: {
+    courriel: string;
+    telephone: string;
+    titre: string;
+    aPropos: {
+      raw: string;
+    }
+    sousTitreNosServices: string;
+  }
+  allContentfulTheme: {
+    nodes: {
+      contentful_id: string;
+      titreDuCube: string;
+    }[]
+  }
+}
+
+export interface CubeTitles {
+  [id: string]: string;
 }

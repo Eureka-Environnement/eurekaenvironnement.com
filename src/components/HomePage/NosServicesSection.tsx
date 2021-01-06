@@ -2,12 +2,19 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import Water from "components/Icons/Water";
 import CubeSection from "./CubeSection"
+import { CubeTitles } from "utils/constants";
 
 interface NosServicesSection {
   nosServicesRef: React.MutableRefObject<HTMLDivElement | null>;
+  subTitle: string;
+  cubeTitles: CubeTitles;
 }
 
-const NosServicesSection = ({ nosServicesRef }: NosServicesSection) => {
+const NosServicesSection = ({
+  nosServicesRef,
+  subTitle,
+  cubeTitles
+}: NosServicesSection) => {
   return (
     <div className="section text-center" ref={nosServicesRef}>
       <Container>
@@ -18,10 +25,12 @@ const NosServicesSection = ({ nosServicesRef }: NosServicesSection) => {
             <hr />
             <h2 className="title sub-section eureka">
               <small>
-                Nos experts sont la pour répondre à toutes vos questions!
+                {subTitle}
               </small>
             </h2>
-            <CubeSection/>
+            <CubeSection
+              cubeTitles={cubeTitles}
+            />
           </Col>
         </Row>
       </Container>

@@ -7,9 +7,11 @@ import {
 
 interface ContactSection {
   contactRef: React.MutableRefObject<HTMLDivElement | null>;
+  phone: string;
+  email: string;
 }
 
-const ContactSection = ({ contactRef }: ContactSection) => {
+const ContactSection = ({ contactRef, phone, email }: ContactSection) => {
   return (
     <div className="section text-center" ref={contactRef}>
       <Container>
@@ -23,13 +25,13 @@ const ContactSection = ({ contactRef }: ContactSection) => {
           <Col md="6">
             <h3 style={{ textAlign: 'left', color: '#01184f', fontWeight: 'initial' }}>Téléphone</h3>
             <p className="description center-horizontal">
-              450-300-4045 | 819-415-5535
+              {phone}
             </p>
           </Col>
           <Col md="6">
             <h3 style={{ textAlign: 'left', color: '#01184f', fontWeight: 'initial' }}>Courriel</h3>
             <p className="description center-horizontal">
-            info@eurekaenvironnement.com
+              <a href={`mailto:${email}`}>{email}</a>
             </p>
           </Col>
         </Row>
@@ -38,7 +40,7 @@ const ContactSection = ({ contactRef }: ContactSection) => {
             <h3 style={{textAlign: 'left', color: '#01184f', fontWeight: 'initial' }}>Joliette</h3>
             <iframe
               title="adress"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.370820051493!2d-73.43492034853541!3d46.023749203849796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8bdbe2bcc0125%3A0xa412f572c068d3f0!2s417%20Rue%20Saint%20Thomas%2C%20Joliette%2C%20QC%20J6E%203P9!5e0!3m2!1sen!2sca!4v1608417421528!5m2!1sen!2sca"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.370820046384!2d-73.4349149837938!3d46.023749203951745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8bd522ee87e55%3A0x29736fd2d165e550!2sEur%C3%AAka%20Environnement!5e0!3m2!1sfr!2sca!4v1609965206347!5m2!1sfr!2sca"
               width="500"
               height="375"
               frameBorder="0"
