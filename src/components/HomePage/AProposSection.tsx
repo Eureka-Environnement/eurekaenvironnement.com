@@ -4,10 +4,11 @@ import AboutUs from "components/Icons/AboutUs";
 
 interface AProposSection {
   aProposRef: React.MutableRefObject<HTMLDivElement | null>;
+  aPropos: React.ReactNode;
 }
 
 
-const AProposSection = ({ aProposRef }: AProposSection) => {
+const AProposSection = ({ aProposRef, aPropos }: AProposSection) => {
   return (
     <div className="section text-center" ref={aProposRef}>
       <Container>
@@ -21,15 +22,7 @@ const AProposSection = ({ aProposRef }: AProposSection) => {
         <Row className="section-space-bottom">
           <Col>
             <h4 className="description">
-              Eurêka Environnement est une firme de génie-conseil spécialisée
-              dans la gestion de l’eau et la conception de systèmes de
-              traitement. Que vous souhaitiez prélever de l’eau d’un puits, la
-              rendre potable, traiter vos eaux usées, gérer et réutiliser vos
-              eaux pluviales, notre expertise vous permettra de réaliser tous
-              vos projets. Notre mission : vous offrir un service personnalisé
-              adapté à vos besoins ainsi qu’aux enjeux environnementaux actuels
-              et futurs. Eurêka Environnement, des solutions innovantes à vos
-              problèmes les plus complexes.
+              {aPropos}
             </h4>
           </Col>
         </Row>

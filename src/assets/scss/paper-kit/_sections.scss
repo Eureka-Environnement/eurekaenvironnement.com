@@ -22,6 +22,7 @@
         }
     }
     &.top-of-page {
+        min-height: 93.45vh;
         padding-top: 145px;
         @media (max-width: 411px) {
             padding-top: 70px;

@@ -3,10 +3,12 @@ import { Button, Container } from "reactstrap";
 
 interface AccueilSection {
   nousJoindreRef: React.MutableRefObject<HTMLDivElement | null>;
+  title: string;
 }
 
 const AccueilSection = ({
-  nousJoindreRef
+  nousJoindreRef,
+  title
 }: AccueilSection) => {
 
   const scrollToNousJoindre = () => {
@@ -21,7 +23,7 @@ const AccueilSection = ({
       <div className="filter" />
       <Container>
         <div className="motto text-center landing">
-          <h1>Experts-conseil en environnement</h1>
+          <h1>{title}</h1>
           <br />
           <Button
             className="btn-round"

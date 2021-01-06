@@ -7,9 +7,11 @@ import {
 
 interface ContactSection {
   contactRef: React.MutableRefObject<HTMLDivElement | null>;
+  phone: string;
+  email: string;
 }
 
-const ContactSection = ({ contactRef }: ContactSection) => {
+const ContactSection = ({ contactRef, phone, email }: ContactSection) => {
   return (
     <div className="section text-center" ref={contactRef}>
       <Container>
@@ -23,13 +25,13 @@ const ContactSection = ({ contactRef }: ContactSection) => {
           <Col md="6">
             <h3 style={{ textAlign: 'left', color: '#01184f', fontWeight: 'initial' }}>Téléphone</h3>
             <p className="description center-horizontal">
-              450-300-4045 | 819-415-5535
+              {phone}
             </p>
           </Col>
           <Col md="6">
             <h3 style={{ textAlign: 'left', color: '#01184f', fontWeight: 'initial' }}>Courriel</h3>
             <p className="description center-horizontal">
-            info@eurekaenvironnement.com
+              <a href={`mailto:${email}`}>{email}</a>
             </p>
           </Col>
         </Row>
