@@ -41,7 +41,7 @@ const ContactSection = ({ contactRef, phone, email }: ContactSection) => {
             <iframe
               title="adress"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2770.370820046384!2d-73.4349149837938!3d46.023749203951745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc8bd522ee87e55%3A0x29736fd2d165e550!2sEur%C3%AAka%20Environnement!5e0!3m2!1sfr!2sca!4v1609965206347!5m2!1sfr!2sca"
-              width="500"
+              width="100%"
               height="375"
               frameBorder="0"
               style={{float: 'left', border: 0 }}
@@ -55,7 +55,7 @@ const ContactSection = ({ contactRef, phone, email }: ContactSection) => {
             <iframe
               title="adress"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.404773397074!2d-72.56661770152608!3d46.32165754171248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc7cfa333877951%3A0xd04cc16fbeda7788!2sEur%C3%AAka%20Environnement!5e0!3m2!1sfr!2sca!4v1604973324074!5m2!1sfr!2sca"
-              width="500"
+              width="100%"
               height="375"
               frameBorder="0"
               style={{float: 'left', border: 0 }}
