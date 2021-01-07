@@ -39,7 +39,7 @@ export const query = graphql`
       sousThemes {
         contentful_id
         image {
-          fixed {
+          fixed(width: 720) {
             src
           }
         }

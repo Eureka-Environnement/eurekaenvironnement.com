@@ -31,10 +31,10 @@ const ThemeSectionRight = ({title, image, services}: ThemeSectionRight) => {
         <Col className="ml-auto mr-auto" md="6">
           <Card className="card-plain">
             <CardTitle className="pt-0">
-              <h2 className="mt-0">{title}</h2>
+              <h2 className="mt-0 text-eureka-color-2">{title}</h2>
             </CardTitle>
             <CardBody>
-            <ListGroup flush>
+            <ListGroup flush className="ml-0 text-25">
                 {services.map((service) => (<ListGroupItem>{service}</ListGroupItem>))}
               </ListGroup>
             </CardBody>
