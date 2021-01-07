@@ -13,6 +13,11 @@ export const RESIDENTIEL_ID = "LcXKSBMEyzeJfLTydzYPr"
 export const SOL_ID = "4vLwbIphuyrjFMf6qzcZNZ"
 export const EAU_ID = "5PodCONh0xxf0cUWqoTtyl"
 
+export const APROPOS_ID = 'aPropos'
+export const SERVICES_ID = 'services'
+export const CONTACT_ID = 'contact'
+export const LOGO_ID = 'logoBtn'
+
 interface subTheme {
   contentful_id: string;
   image: {

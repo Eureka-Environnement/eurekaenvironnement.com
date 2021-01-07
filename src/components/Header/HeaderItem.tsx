@@ -1,5 +1,5 @@
 import React from 'react';
-import { navigate } from 'gatsby';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import {
   NavItem,
   NavLink
@@ -8,26 +8,18 @@ import { HOME_PAGE } from 'utils/constants';
 
 interface HeaderItem {
   title: string;
-  toggleNavbar: VoidFunction;
-  sectionRef: React.MutableRefObject<HTMLDivElement | null>;
+  refId: string;
 }
 
 const HeaderItem = ({
   title,
-  toggleNavbar,
-  sectionRef
+  refId,
 }: HeaderItem) => {
   return (
     <NavItem>
       <NavLink
-        onClick={() => {
-          navigate(HOME_PAGE);
-          window.innerWidth < 992 && toggleNavbar();
-          window.scroll({
-            top: sectionRef.current ? sectionRef?.current?.offsetTop - 70 : 0,
-            behavior: 'smooth'
-          });
-        }}
+        tag={AnchorLink}
+        to={`${HOME_PAGE}#${refId}`}
       >
         {title}
       </NavLink>

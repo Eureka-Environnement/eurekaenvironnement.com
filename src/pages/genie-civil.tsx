@@ -16,18 +16,12 @@ interface Genie {
 }
 
 function Genie({data}: Genie) {
-  const aProposRef = useRef<null | HTMLDivElement>(null);
-  const nosServicesRef = useRef<null | HTMLDivElement>(null);
-  const contactRef = useRef<null | HTMLDivElement>(null);
   const subThemes = mapSubThemes(data);
+
   return (
     <>
       <PageHelmet />
-      <Header
-        aProposRef={aProposRef}
-        nosServicesRef={nosServicesRef}
-        contactRef={contactRef}
-      />
+      <Header />
       <ThemePage subThemes={subThemes} />
       <Footer />
     </>

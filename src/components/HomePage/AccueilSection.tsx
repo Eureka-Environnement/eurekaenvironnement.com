@@ -2,18 +2,18 @@ import React from "react";
 import { Button, Container } from "reactstrap";
 
 interface AccueilSection {
-  nousJoindreRef: React.MutableRefObject<HTMLDivElement | null>;
+  contactRef: React.MutableRefObject<HTMLDivElement | null>;
   title: string;
 }
 
 const AccueilSection = ({
-  nousJoindreRef,
+  contactRef,
   title
 }: AccueilSection) => {
 
-  const scrollToNousJoindre = () => {
-    window.scroll({
-      top: nousJoindreRef.current ? nousJoindreRef?.current?.offsetTop : 0,
+  const scrollToContact = () => {
+    window.scrollTo({
+      top: contactRef.current ? contactRef?.current?.offsetTop : 0,
       behavior: 'smooth'
     });
   }
@@ -28,7 +28,7 @@ const AccueilSection = ({
           <Button
             className="btn-round"
             color="primary"
-            onClick={scrollToNousJoindre}
+            onClick={scrollToContact}
           >
             Demandez une consultation!
           </Button>
