@@ -209,9 +209,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 .cube-section{
+  max-width: 800px;
+  margin: auto;
   .row .col{
     padding: 20px;
-    height: 250px;
+    height: 200px;
     outline-offset:-3px;
     border: white 2px solid; 
     

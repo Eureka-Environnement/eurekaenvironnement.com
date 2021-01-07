@@ -49,7 +49,7 @@ $primary-states-color:       darken($primary-color, 10%) !default;
 $success-color:              #6bd098 !default;
 $success-states-color:       darken($success-color, 10%) !default;
 
-$info-color:                 #51bcda !default;
+$info-color:                 $eureka-color-1 !default;
 $info-states-color:          darken($info-color, 10%) !default;
 
 $warning-color:              #fbc658 !default;
@@ -150,10 +150,10 @@ $font-size-navbar:             14px !default;
 
 $font-size-info-horizontal:    2.5em !default;
 
-$font-weight-light:          300 !default;
-$font-weight-normal:         400 !default;
-$font-weight-semi:           500 !default;
-$font-weight-bold:           600 !default;
+$font-weight-light:          400 !default;
+$font-weight-normal:         500 !default;
+$font-weight-semi:           600 !default;
+$font-weight-bold:           700 !default;
 
 $line-height-small:            20px !default;
 $line-height-general:          1.5em !default;
