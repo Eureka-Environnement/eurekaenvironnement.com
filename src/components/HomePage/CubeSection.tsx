@@ -27,26 +27,26 @@ const CubeSection = ({
   return (
     <div className="cube-section">
       <Row>
-        <Col className="col-sm-12 col-md-3 offset-md-6 rd" onClick={() => { navigate(RECHERCHE_PAGE) }}>
+        <Col className="col-12 col-sm-12 col-md-3 offset-md-6 rd" onClick={() => { navigate(RECHERCHE_PAGE) }}>
           {cubeTitles[RECHERCHE_ID]}
         </Col>
       </Row>
       <Row>
-        <Col className="col-sm-12 col-md-3 eau" onClick={() => { navigate(EAU_PAGE) }}>
+        <Col className="col-12 col-sm-12 col-md-3 eau" onClick={() => { navigate(EAU_PAGE) }}>
           {cubeTitles[EAU_ID]}
         </Col>
-        <Col className="col-sm-12 col-md-3 genie-civil" onClick={() => { navigate(GENIE_PAGE) }}>
+        <Col className="col-12 col-sm-12 col-md-3 genie-civil" onClick={() => { navigate(GENIE_PAGE) }}>
           {cubeTitles[GENIE_ID]}
         </Col>
-        <Col className="col-sm-12 col-md-3 sol"  onClick={() => { navigate(SOL_PAGE) }}>
+        <Col className="col-12 col-sm-12 col-md-3 sol"  onClick={() => { navigate(SOL_PAGE) }}>
           {cubeTitles[SOL_ID]}
         </Col>
-        <Col className="col-sm-12 col-md-3 matieres-residuelles"  onClick={() => { navigate(MATIERES_PAGE) }}>
+        <Col className="col-12 col-sm-12 col-md-3 matieres-residuelles"  onClick={() => { navigate(MATIERES_PAGE) }}>
           {cubeTitles[MATIERES_ID]}
         </Col>
       </Row>
       <Row>
-        <Col className="col-sm-12 col-md-3 offset-md-3 residentiel" onClick={() => { navigate(RESIDENTIEL_PAGE) }}>
+        <Col className="col-12 col-sm-12 col-md-3 offset-md-3 residentiel" onClick={() => { navigate(RESIDENTIEL_PAGE) }}>
           {cubeTitles[RESIDENTIEL_ID]}
         </Col>
       </Row>
