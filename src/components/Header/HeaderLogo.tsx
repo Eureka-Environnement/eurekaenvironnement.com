@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
 import classnames from 'classnames';
 import { NavbarBrand } from 'reactstrap';
-import { HOME_PAGE } from 'utils/constants';
+import { HOME_PAGE, LOGO_ID } from 'utils/constants';
 
 interface HeaderLogo {
   navbarCollapse: boolean;
@@ -34,7 +34,7 @@ const HeaderLogo = ({
         className="navbar-logo"
         to={HOME_PAGE}
         tag={Link}
-        id="logoBtn"
+        id={LOGO_ID}
       />
       <button
         type="button"

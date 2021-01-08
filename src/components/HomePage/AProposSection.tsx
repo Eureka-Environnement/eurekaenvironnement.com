@@ -1,16 +1,16 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import AboutUs from "components/Icons/AboutUs";
+import { APROPOS_ID } from "utils/constants";
 
 interface AProposSection {
-  aProposRef: React.MutableRefObject<HTMLDivElement | null>;
   aPropos: React.ReactNode;
 }
 
 
-const AProposSection = ({ aProposRef, aPropos }: AProposSection) => {
+const AProposSection = ({ aPropos }: AProposSection) => {
   return (
-    <div className="section text-center" ref={aProposRef}>
+    <div className="section text-center" id={APROPOS_ID}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">

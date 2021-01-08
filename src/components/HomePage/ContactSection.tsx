@@ -4,6 +4,7 @@ import {
   Container,
   Row,
 } from "reactstrap";
+import { CONTACT_ID } from "utils/constants";
 
 interface ContactSection {
   contactRef: React.MutableRefObject<HTMLDivElement | null>;
@@ -13,7 +14,7 @@ interface ContactSection {
 
 const ContactSection = ({ contactRef, phone, email }: ContactSection) => {
   return (
-    <div className="section text-center" ref={contactRef}>
+    <div className="section text-center" id={CONTACT_ID} ref={contactRef}>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" md="12">

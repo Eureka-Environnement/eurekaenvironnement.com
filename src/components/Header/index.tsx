@@ -11,19 +11,9 @@ import {
 } from 'reactstrap';
 import HeaderLogo from './HeaderLogo';
 import HeaderItem from './HeaderItem';
+import { APROPOS_ID, CONTACT_ID, SERVICES_ID } from 'utils/constants';
 
-interface Header {
-  aProposRef: React.MutableRefObject<HTMLDivElement | null>;
-  nosServicesRef: React.MutableRefObject<HTMLDivElement | null>;
-  contactRef: React.MutableRefObject<HTMLDivElement | null>;
-}
-
-const Header = ({
-  aProposRef,
-  nosServicesRef,
-  // realisationsRef,
-  contactRef,
-}: Header) => {
+const Header = () => {
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
@@ -62,18 +52,15 @@ const Header = ({
           <Nav navbar>
             <HeaderItem
               title="À propos"
-              toggleNavbar={toggleNavbarCollapse}
-              sectionRef={aProposRef}
+              refId={APROPOS_ID}
             />
             <HeaderItem
               title="Nos services"
-              toggleNavbar={toggleNavbarCollapse}
-              sectionRef={nosServicesRef}
+              refId={SERVICES_ID}
             />
             <HeaderItem
               title="Contactez-nous"
-              toggleNavbar={toggleNavbarCollapse}
-              sectionRef={contactRef}
+              refId={CONTACT_ID}
             />
           </Nav>
         </Collapse>

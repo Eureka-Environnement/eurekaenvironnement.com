@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -15,18 +15,12 @@ interface Matieres {
 }
 
 function Matieres({data}: Matieres) {
-  const aProposRef = useRef<null | HTMLDivElement>(null);
-  const nosServicesRef = useRef<null | HTMLDivElement>(null);
-  const contactRef = useRef<null | HTMLDivElement>(null);
   const subThemes = mapSubThemes(data);
+
   return (
     <>
       <PageHelmet />
-      <Header
-        aProposRef={aProposRef}
-        nosServicesRef={nosServicesRef}
-        contactRef={contactRef}
-      />
+      <Header />
       <ThemePage subThemes={subThemes} />
       <Footer />
     </>

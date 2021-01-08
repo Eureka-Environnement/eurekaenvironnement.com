@@ -15,24 +15,12 @@ interface Home {
 }
 
 function Home({ data }: Home) {
-  const aProposRef = useRef<null | HTMLDivElement>(null);
-  const nosServicesRef = useRef<null | HTMLDivElement>(null);
-  const contactRef = useRef<null | HTMLDivElement>(null);
 
   return (
     <>
       <PageHelmet />
-      <Header
-        aProposRef={aProposRef}
-        nosServicesRef={nosServicesRef}
-        contactRef={contactRef}
-      />
-      <HomePage
-        aProposRef={aProposRef}
-        nosServicesRef={nosServicesRef}
-        contactRef={contactRef}
-        data={data}
-      />
+      <Header />
+      <HomePage data={data} />
       <Footer />
     </>
   );
