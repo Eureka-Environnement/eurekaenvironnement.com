@@ -29,7 +29,7 @@ const ThemeSectionLeft = ({title, image, services}: ThemeSectionLeft) => {
               <h2 className="mt-0 text-eureka-color-2">{title}</h2>
             </CardTitle>
             <CardBody>
-              <ListGroup flush className="ml-0 text-25">
+              <ListGroup flush className="ml-0 text-list">
                 {services.map((service) => (<ListGroupItem>{service}</ListGroupItem>))}
               </ListGroup>
             </CardBody>
