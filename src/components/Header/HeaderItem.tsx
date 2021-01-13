@@ -21,9 +21,7 @@ const HeaderItem = ({
     <NavItem>
       <NavLink
         tag={AnchorLink}
-        onAnchorLinkClick={() => {
-          toggleNavbarCollapse();
-        }}
+        onAnchorLinkClick={toggleNavbarCollapse}
         to={`${HOME_PAGE}#${refId}`}
       >
         {title}
