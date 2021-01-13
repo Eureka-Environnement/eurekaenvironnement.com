@@ -53,14 +53,17 @@ const Header = () => {
             <HeaderItem
               title="À propos"
               refId={APROPOS_ID}
+              toggleNavbarCollapse={toggleNavbarCollapse}
             />
             <HeaderItem
               title="Nos services"
               refId={SERVICES_ID}
+              toggleNavbarCollapse={toggleNavbarCollapse}
             />
             <HeaderItem
               title="Contactez-nous"
               refId={CONTACT_ID}
+              toggleNavbarCollapse={toggleNavbarCollapse}
             />
           </Nav>
         </Collapse>
