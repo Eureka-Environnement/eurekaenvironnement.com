@@ -21,7 +21,9 @@ const HeaderItem = ({
     <NavItem>
       <NavLink
         tag={AnchorLink}
-        onAnchorLinkClick={toggleNavbarCollapse}
+        onAnchorLinkClick={() => {
+          window.innerWidth < 992 && toggleNavbarCollapse();
+        }}
         to={`${HOME_PAGE}#${refId}`}
       >
         {title}
