@@ -32,7 +32,7 @@ const ContactSection = ({ contactRef, phone, email }: ContactSection) => {
           <Col md="6">
             <h3 style={{ textAlign: 'left', color: '#01184f', fontWeight: 'initial' }}>Courriel</h3>
             <p className="description center-horizontal">
-              <a href={`mailto:${email}`}>{email}</a>
+              <a className="email" href={`mailto:${email}`}>{email}</a>
             </p>
           </Col>
         </Row>
